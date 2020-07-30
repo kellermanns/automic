@@ -14,12 +14,12 @@
          <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>JOBS.WIN.GITHUB.1</name>
+         <name>JOBS.WIN.GITHUB.2</name>
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <description>Test 1</description>
-         <versioning_id>-188986581</versioning_id>
+         <description>Test 2</description>
+         <versioning_id>-160357430</versioning_id>
       </row>
    </general_attributes>
    <scripts>
