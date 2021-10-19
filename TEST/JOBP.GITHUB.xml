@@ -2,7 +2,7 @@
 <jobp>
    <metadata>
       <row>
-         <version>12.3.2</version>
+         <version>12.3.5</version>
       </row>
    </metadata>
    <general_attributes>
@@ -54,25 +54,25 @@
       <row>
          <active>1</active>
          <childflags>0000000000000000</childflags>
-         <column>2</column>
+         <column>3</column>
          <line_number>3</line_number>
          <mrt_time>000000</mrt_time>
          <object_name>JOBS.WIN.GITHUB.2</object_name>
          <object_type>JOBS</object_type>
          <predecessors>1</predecessors>
          <rollback_enabled>1</rollback_enabled>
-         <row>2</row>
+         <row>1</row>
          <precondition_error_action>H</precondition_error_action>
       </row>
       <row>
          <active>1</active>
          <childflags>0000000000000000</childflags>
-         <column>3</column>
+         <column>4</column>
          <line_number>4</line_number>
          <mrt_time>000000</mrt_time>
          <object_name>END</object_name>
          <object_type><![CDATA[<END>]]></object_type>
-         <predecessors>2</predecessors>
+         <predecessors>1</predecessors>
          <row>1</row>
          <precondition_error_action>H</precondition_error_action>
       </row>
@@ -86,16 +86,11 @@
       <row>
          <workflow_line_number>3</workflow_line_number>
          <line_number>1</line_number>
-         <predecessor_line_number>1</predecessor_line_number>
-      </row>
-      <row>
-         <workflow_line_number>4</workflow_line_number>
-         <line_number>1</line_number>
          <predecessor_line_number>2</predecessor_line_number>
       </row>
       <row>
          <workflow_line_number>4</workflow_line_number>
-         <line_number>2</line_number>
+         <line_number>1</line_number>
          <predecessor_line_number>3</predecessor_line_number>
       </row>
    </line_conditions>
