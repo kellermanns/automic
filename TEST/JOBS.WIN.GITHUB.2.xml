@@ -2,7 +2,7 @@
 <jobs>
    <metadata>
       <row>
-         <version>12.3.2</version>
+         <version>12.3.5</version>
       </row>
    </metadata>
    <general_attributes>
@@ -26,7 +26,8 @@
       <row>
          <process><![CDATA[Test 1
 Test 2
-Test 3]]></process>
+Test 3
+Test 4]]></process>
       </row>
    </scripts>
    <job_attributes>
