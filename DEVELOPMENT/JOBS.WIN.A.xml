@@ -27,6 +27,7 @@
          <process><![CDATA[echo 1
 echo 2
 echo 3
+echo 4
 
 ! insert these lines in your script to determine if an error occurred
 !
