@@ -14,22 +14,20 @@
          <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>JOBS.WIN.TEST.1</name>
+         <name>JOBS.WIN.GITHUB.2</name>
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <versioning_id>2097496348</versioning_id>
+         <description>Test 2</description>
+         <versioning_id>-160357430</versioning_id>
       </row>
    </general_attributes>
    <scripts>
       <row>
-         <process><![CDATA[echo 1
-echo 2
-! insert these lines in your script to determine if an error occurred
-!
-! @set retcode=%errorlevel%
-! @if NOT %ERRORLEVEL% == 0 goto :retcode
-]]></process>
+         <process><![CDATA[Test 1
+Test 2
+Test 3
+Test 4]]></process>
       </row>
    </scripts>
    <job_attributes>

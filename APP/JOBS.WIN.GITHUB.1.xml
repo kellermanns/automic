@@ -2,7 +2,7 @@
 <jobs>
    <metadata>
       <row>
-         <version>12.3.5</version>
+         <version>21.0.5</version>
       </row>
    </metadata>
    <general_attributes>
@@ -14,26 +14,26 @@
          <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>JOBS.WIN.GITHUB.2</name>
+         <name>JOBS.WIN.GITHUB.1</name>
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <description>Test 2</description>
-         <versioning_id>-160357430</versioning_id>
+         <description>Test 1</description>
+         <versioning_id>-188986581</versioning_id>
       </row>
    </general_attributes>
    <scripts>
       <row>
          <process><![CDATA[Test 1
 Test 2
-Test 3
-Test 4]]></process>
+Test 3]]></process>
       </row>
    </scripts>
    <job_attributes>
       <row>
          <platform>WINDOWS</platform>
-         <agent><![CDATA[<WIN>]]></agent>
+         <agent>BUILDSERVER</agent>
+         <login>LOGIN.BUILDSERVER</login>
          <job_report_path>2</job_report_path>
          <win_work_dir>c:\</win_work_dir>
          <win_typ>0</win_typ>
