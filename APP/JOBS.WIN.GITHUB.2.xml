@@ -10,8 +10,9 @@
          <minimum_ae_version>11.2</minimum_ae_version>
          <auto_deactivation>A</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>1</ert>
          <platform>WINDOWS</platform>
-         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <last_runtimes>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
          <name>JOBS.WIN.GITHUB.2</name>
@@ -24,16 +25,16 @@
    </general_attributes>
    <scripts>
       <row>
-         <process><![CDATA[Test 1
-Test 2
-Test 3
-Test 4]]></process>
+         <process><![CDATA[echo Test 1
+echo Test 2
+echo Test 3]]></process>
       </row>
    </scripts>
    <job_attributes>
       <row>
          <platform>WINDOWS</platform>
-         <agent><![CDATA[<WIN>]]></agent>
+         <agent>BUILDSERVER</agent>
+         <login>LOGIN.BUILDSERVER</login>
          <job_report_path>2</job_report_path>
          <win_work_dir>c:\</win_work_dir>
          <win_typ>0</win_typ>
