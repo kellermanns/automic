@@ -11,25 +11,23 @@
          <auto_deactivation>A</auto_deactivation>
          <child_flags>00000000000000000000000000000000</child_flags>
          <ert>1</ert>
-         <ert_trend>2</ert_trend>
          <platform>WINDOWS</platform>
-         <last_runtimes>AQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>JOBS.WIN.GITHUB.1</name>
+         <name>JOBS.WIN.GITHUB.5</name>
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <description>Test 1</description>
-         <versioning_id>-188986581</versioning_id>
+         <description>Test 5</description>
+         <versioning_id>-74469977</versioning_id>
       </row>
    </general_attributes>
    <scripts>
       <row>
          <process><![CDATA[echo Test 1
 echo Test 2
-echo Test 3
-echo Test 4]]></process>
+echo Test 3]]></process>
       </row>
    </scripts>
    <job_attributes>
