@@ -22,11 +22,6 @@
          <versioning_id>2004827787</versioning_id>
       </row>
    </general_attributes>
-   <scripts>
-      <row>
-         <process>!change</process>
-      </row>
-   </scripts>
    <workflow_attributes>
       <row>
          <reuse_agent_group>1</reuse_agent_group>

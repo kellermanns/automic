@@ -106,7 +106,7 @@
 
 :print &report#
 
-! ASK_AI Functions
+! ASK_AI Function
 :set &problem# = ask_ai("This is the output of an IT application in a textual format. You can ignore all messages starting with UCMDJP. {data}:{query}","&report#","What could have been the problem of the application? Do not include a solution. The answer should be between 50 and 100 words")
 :set &solution# = ask_ai("This is the output of an IT application in a textual format. You can ignore all messages starting with UCMDJP. {data}:{query}","&report#","What could be a possible solution for the problem? The answer should be between 50 and 100 words")
 

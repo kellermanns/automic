@@ -25,6 +25,7 @@
    <scripts>
       <row>
          <process><![CDATA[cuurl www.google.com
+!
 @set retcode=%errorlevel%
 @if NOT %ERRORLEVEL% == 0 goto :retcode
 
