@@ -2,7 +2,7 @@
 <jobs>
    <metadata>
       <row>
-         <version>24.0.0</version>
+         <version>24.4.0</version>
       </row>
    </metadata>
    <general_attributes>
@@ -12,15 +12,15 @@
          <child_flags>00000000000000000000000000000000</child_flags>
          <ert>1</ert>
          <platform>WINDOWS</platform>
-         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <last_runtimes>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</last_runtimes>
          <max_parallel_action>1</max_parallel_action>
          <mrt_time>000000</mrt_time>
-         <name>JOBS.WIN.GITHUB.4</name>
+         <name>JOBS.WIN.GITHUB.2</name>
          <type>JOBS</type>
          <inherit_output_filter>N</inherit_output_filter>
          <queue>CLIENT_QUEUE</queue>
-         <description>Test 4</description>
-         <versioning_id>-103099128</versioning_id>
+         <description>Test 2</description>
+         <versioning_id>-160357430</versioning_id>
       </row>
    </general_attributes>
    <scripts>

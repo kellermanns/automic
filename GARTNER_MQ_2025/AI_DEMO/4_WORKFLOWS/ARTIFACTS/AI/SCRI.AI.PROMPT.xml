@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scri>
+   <metadata>
+      <row>
+         <version>24.4.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <minimum_ae_version>11.2</minimum_ae_version>
+         <auto_deactivation>A</auto_deactivation>
+         <child_flags>00000000000000000000000000000000</child_flags>
+         <ert>4</ert>
+         <last_runtimes>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</last_runtimes>
+         <max_parallel_action>1</max_parallel_action>
+         <mrt_time>000000</mrt_time>
+         <name>SCRI.AI.PROMPT</name>
+         <type>SCRI</type>
+         <inherit_output_filter>N</inherit_output_filter>
+         <queue>CLIENT_QUEUE</queue>
+         <versioning_id>272948519</versioning_id>
+      </row>
+   </general_attributes>
+   <scripts>
+      <row>
+         <process><![CDATA[:SET &RECORDS# = ASK_AI("Extract just the number of records form the following text: &PROMPT#")
+:SET &ERRNR# = SYS_LAST_ERR_NR()
+:IF &ERRNR# NE "0"
+:  SET &ERRINS# = SYS_LAST_ERR_INS()
+:  SET &MESSAGE# = GET_MSG_TXT(&ERRNR#, &ERRINS#)
+:  PRINT &MESSAGE#
+:  STOP
+:ELSE
+:  PSET &RECORDS# = FORMAT(&RECORDS#)
+:  PRINT &RECORDS#
+:ENDIF
+!
+:SET &SQL_TABLE# = ASK_AI("Extract just the source table name only following text without adding any special characters or spaces: &PROMPT#")
+:SET &ERRNR# = SYS_LAST_ERR_NR()
+:IF &ERRNR# NE "0"
+:  SET &ERRINS# = SYS_LAST_ERR_INS()
+:  SET &MESSAGE# = GET_MSG_TXT(&ERRNR#, &ERRINS#)
+:  PRINT &MESSAGE#
+:  STOP
+:ELSE
+:  PSET &SQL_TABLE# = STR_SUB(&SQL_TABLE#, "table", "")
+:  PRINT &SQL_TABLE#
+:ENDIF
+!
+:SET &BQ_TABLE# = ASK_AI("Extract just the big query table name only following text without adding any special characters or spaces: &PROMPT#")
+:SET &ERRNR# = SYS_LAST_ERR_NR()
+:IF &ERRNR# NE "0"
+:  SET &ERRINS# = SYS_LAST_ERR_INS()
+:  SET &MESSAGE# = GET_MSG_TXT(&ERRNR#, &ERRINS#)
+:  PRINT &MESSAGE#
+:  STOP
+:ELSE
+:  PSET &BQ_TABLE# = STR_SUB(&BQ_TABLE#, "table", "")
+:  PRINT &BQ_TABLE#
+:ENDIF]]></process>
+      </row>
+   </scripts>
+   <script_attributes>
+      <row>
+         <activation_at_runtime>1</activation_at_runtime>
+      </row>
+   </script_attributes>
+   <rollback_definitions>
+      <row>
+      </row>
+   </rollback_definitions>
+</scri>
