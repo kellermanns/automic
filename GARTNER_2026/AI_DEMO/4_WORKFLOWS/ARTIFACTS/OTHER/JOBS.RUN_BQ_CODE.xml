@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<link>
+   <metadata>
+      <row>
+         <version>26.0.0</version>
+      </row>
+   </metadata>
+   <general_attributes>
+      <row>
+         <name>JOBS.RUN_BQ_CODE</name>
+      </row>
+   </general_attributes>
+</link>

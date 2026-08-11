@@ -2,7 +2,7 @@
 <jobs>
    <metadata>
       <row>
-         <version>24.4.0</version>
+         <version>26.0.0</version>
       </row>
    </metadata>
    <general_attributes>
@@ -24,7 +24,8 @@
    </general_attributes>
    <scripts>
       <row>
-         <process><![CDATA[dir
+         <process><![CDATA[! comment 2
+dir 
 ! insert these lines in your script to determine if an error occurred
 !
 ! @set retcode=%errorlevel%
